@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Info from './componets/Tab';
-import ControlledCarousel from './componets/ControlledCarousel';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +24,6 @@ ReactDOM.render(
     </Navbar.Brand>
     </Navbar>
     <Info/><br></br>
-    <ControlledCarousel />
   </React.StrictMode>,
   document.getElementById('root')
 );

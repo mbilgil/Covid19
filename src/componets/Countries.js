@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Tag, Input } from 'antd';
+import { Card, Input } from 'antd';
 
 const { Search } = Input;
 
@@ -13,7 +13,6 @@ const App = () => {
     const [data, setData] = useState([]);
     const [query, setQuery] = useState("");
 
-
     const search = evt => {
         if (evt.key === "Enter") {
             fetch(`${api.base}${query}`)
@@ -22,29 +21,52 @@ const App = () => {
                     setData(result);
                     setQuery('');
                     console.log(result);
+
                 });
         }
     }
 
+
     return (
         <div >
             <div class="search-box">
-                <Search
-                    className="search-bar"
-                    placeholder="Search and Enter Press"
+                <Search className="search-bar" placeholder="Search and Enter Press"
                     onChange={e => setQuery(e.target.value)}
                     value={query}
                     onKeyPress={search}
-                    style={{ width: 350, marginLeft: '300px', marginBottom: '30px' }}
+                    style={{ borderRadius: 30 }}
                 />
             </div>
+
             <div className="country-box">
-                <div className="country">
-                    <Card title={data.country} style={{ width: 300 }}>
-                        <p>Cases : <Tag color="blue">{data.cases}</Tag></p>
-                        <p>Deaths : <Tag color="red">{data.deaths}</Tag></p>
-                        <p>Recovered : <Tag color="green">{data.recovered}</Tag></p>
+                <h3 className="text-uppercase">{data.country}</h3>
+                <div className="country ">
+                    <Card className="text-left bg-4 text-light" style={{ width: '18rem' }}>
+                        <h2 className="text-uppercase text-center text-light">Total Test</h2>
+                        <h4 className="text-center text-light">{data.totalTests}</h4>
                     </Card>
+                </div>
+                <div className="country ">
+                    <Card className="text-left bg-1 text-light" style={{ width: '18rem' }}>
+                        <h2 className="text-uppercase text-center text-light">cases</h2>
+                        <h4 className="text-center text-light">{data.cases}</h4>
+                    </Card>
+
+                </div>
+                <div className="country ">
+                    <Card className="text-left bg-2 text-light" style={{ width: '18rem' }}>
+                        <h2 className="text-uppercase text-center text-light">deaths</h2>
+                        <h4 className="text-center text-light">{data.deaths}</h4>
+                    </Card>
+
+                </div>
+
+                <div className="country ">
+                    <Card className="text-left bg-3 text-light" style={{ width: '18rem' }}>
+                        <h2 className="text-uppercase text-center text-light">recovered</h2>
+                        <h4 className="text-center text-light">{data.recovered}</h4>
+                    </Card>
+
                 </div>
             </div>
         </div>

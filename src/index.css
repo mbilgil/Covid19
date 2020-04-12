@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FFFFFF;  
 }
 
 code {
@@ -15,7 +16,7 @@ code {
 
 
 .search-box {
-  margin: 75px 480px 75px;
+  margin: 75px  75px; 
 }
 
 .search-box .search-bar:focus {
@@ -30,12 +31,54 @@ code {
 .country-box .country {
   position: relative;
   display: inline-block;
-  background-color: tan;
-  /* background-color: rgba(255, 255, 255, 0.2); */
-  border-radius: 16px;
-  padding: 15px 25px;
   color: #9E9E9E;
   font-size: 102px;
   font-weight: 900;
   text-align: center;
+  margin-top:40px;
 }
+.country {
+  margin-left:15px;
+  height: 180px;
+  margin-top:50px;
+}
+.bg-1{
+  background-color: #3949AB !important;
+}
+.bg-2{
+  background-color: #f44336 !important;
+}
+.bg-3{
+  background-color: #4CAF50 !important;
+}
+.bg-4{
+  background-color: gray !important;
+}
+.ant-card-head-wrapper {
+  color:#fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ant-input{
+  padding: 10px !important;
+}
+.anticon{
+  line-height: 3 !important;
+}
+.nav-tabs a {
+  text-align: center !important;
+    margin: auto !important;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.nav-tabs .nav-link.active {
+    color: white;
+    background-color: red;
+    border-color: #dee2e6  #dee2e6  #dee2e6 ;
+}
+ 
