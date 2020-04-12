@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  text-align: center;
+  background: #FAFAFA;
+  padding: 10px;
+  color: #555;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+
+}
+
+#countryFlag{
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#input_search{
+  padding: 9px;
+  display: inline-block;
+  font-size: 1rem;
+  border: 1px solid rgba(51, 51, 51, 0.151);
+  outline: none;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.table_option{
+  display: flex;
+  background: #FAFAFA;
+  padding: 10px;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.table_option span{
+  display: inline-block;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.048);
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.726);
+  flex-grow: 1;
+  margin: 2px;
+}
+.table_option .wordwide{
+  background: rgba(255, 20, 145, 0.664);
+  color: #fff;
+  text-align: center;
+}
