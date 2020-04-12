@@ -1,6 +1,6 @@
 # Preview
 
-![Preview](https://github.com/mbilgil/Covid19/blob/master/public/corona.gif)
+![Preview](https://github.com/mbilgil/Covid19/blob/master/public/img/corona.gif)
 
 # Getting Started
 Clone or download the project.
